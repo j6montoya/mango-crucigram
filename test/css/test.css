@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0
+}
+body {
+	font-family: Arial;
+	font-size: 14px;
+}
+body.A {
+	background: none;
+}
+body.A .btn {
+	background: #1F77EA;
+	color: #FFFFFF;
+}
+body.A .btn:hover {
+	background: #2F84F4;
+	color: #fff;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+a img {
+	border: none
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: Arial;
+	font-weight: normal;
+	margin: 0 0 10px
+}
+b, strong {
+	font-family: Arial;
+	font-weight: normal
+}
+p {
+	margin: 0 0 10px;
+	text-align: justify;
+}
+p > a {
+	color: #d40d12;
+	font-family: Arial;
+	cursor: pointer
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+	font-size: 12px;
+}
+table tr td {
+	border: thin solid #ccc;
+	padding: 5px
+}
+table tr th {
+	border: thin solid #ccc;
+	padding: 5px
+}
+table a {
+	font-family: Arial;
+	color: #7ac943;
+	cursor: pointer
+}
+.btn {
+	font-family: Arial;
+	background: #d40d12;
+	color: #fff;
+	padding: 6px 14px;
+	display: inline-block;
+	border-radius: 2px;
+	vertical-align: top;
+	cursor: pointer;
+	margin: 8px 0px 0px 0px;
+}
+.btn:hover {
+	background: #94090d
+}
+.crucigram {
+	border-collapse: collapse;
+}
+.crucigram tr td {
+	padding: 4px;
+	font-size: 14px;
+	font-family: Arial;
+	text-align: center;
+	width: 20px;
+	height: 20px;
+	border: none;
+}
+.crucigram tr td.H {
+	background: #5BB4FF;
+	border: thin solid #5BB4FF;
+	font-weight: bold;
+	color: #fff;
+}
+.crucigram tr td.V {
+	background: #1F77EA;
+	border: thin solid #1F77EA;
+	font-weight: bold;
+	color: #fff;
+}
+.crucigram tr td.C {
+	border: thin solid #C7C7C7;
+	background: #fff;
+}
+.crucigram tr td.C:focus {
+  outline: thin solid #0DAFEA;
+}
+.crucigram tr td.CN {
+	border: thin solid #0D0D0D;
+	background-color: #0D0D0D;
+	color: #0D0D0D;
+}
+.cruci {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	overflow-y: auto;
+	border: 0px none;
+	border-radius: 10px;
+	padding: 10px;
+	background: #fff;
+}
+.timer {
+	float: right;
+	padding: 20px;
+	color: #000;
+}
+.timer .counter {
+	font-size: 40px;
+}
+.timer .counter span {
+	font-size: 20px;
+	display: block;
+	margin: 0 0 5px
+}
+.timer hr {
+	border: none;
+	border-bottom: 1px solid #EFEFEF;
+	margin: 10px 0;
+}
+.mark {
+	color: #C8C8C8;
+}
+.textMark{
+	text-decoration: line-through;
+}
+small {
+	color: #B3B3B3;
+	font: 11px normal Arial, sans-serif;
+}

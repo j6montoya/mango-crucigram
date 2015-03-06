@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<link rel="stylesheet" href="css/test.css">
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+		<title>Crucigrama</title>
+		<script src="crucigram.min.js"></script>
+		<script>
+			window.onload = function() {
+				crucigram = new Crucigram({
+					words : {
+						"C1H" : {
+							word : "DESARROLLO",
+							mark : true,
+						},
+						"C2H" : {
+							word : "FUNDAMENTALES",
+							mark : true,
+						},
+						"C3H" : {
+							word : "IGUALDAD",
+							mark : true,
+						},
+						"C4H" : {
+							word : "TRASCENDENCIACONSTITUCIONAL",
+							mark : true,
+						},
+						"C5H" : {
+							word : "VIOLENCIA",
+							mark : true,
+						},
+						"C6H" : {
+							word : "CEDAW",
+							mark : true,
+						},
+						"C1V" : {
+							word : "DERECHOALVOTOPARAMUJERES",
+							mark : true,
+						},
+						"C2V" : {
+							word : "DERECHOSHUMANOS",
+							mark : true,
+						},
+						"C3V" : {
+							word : "ONU",
+							mark : true,
+						},
+						"C4V" : {
+							word : "MUJERRURAL",
+							mark : true,
+						},
+						"C5V" : {
+							word : "FLORENCETHOMAS",
+							mark : true,
+						},
+					},
+					mark : 'mark',
+					check : 'checkWord',
+					press : 'I',
+					pressBackground : '#F0F8FF',
+					originBackground : '#FFFFFF',
+					minimum : 2,
+					minutes : 2,
+					time: true,
+					finishGame : function(score, words) {
+						document.getElementsByClassName('type')[0].innerHTML = 'Finalizado';
+						document.getElementsByClassName('points')[0].innerHTML = score;
+						document.getElementsByClassName('words')[0].innerHTML = words.join(', ');
+					},
+					finishTime : function(score, words) {
+						document.getElementsByClassName('type')[0].innerHTML = 'Limite';
+						document.getElementsByClassName('points')[0].innerHTML = score;
+						document.getElementsByClassName('words')[0].innerHTML = words.join(', ');
+					},
+				});
+				crucigram.start();
+			};
+		</script>
+	</head>
+	<body class="A">
+		<div class="cruci">
+			<table class="crucigram">
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="V">1V</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="V">3V</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="H">1H</td>
+					<td class="C I C1H C1V"></td>
+					<td class="C I C1H"></td>
+					<td class="C I C1H"></td>
+					<td class="C I C1H"></td>
+					<td class="C I C1H"></td>
+					<td class="C I C1H"></td>
+					<td class="C I C1H"></td>
+					<td class="C I C1H"></td>
+					<td class="C I C1H"></td>
+					<td class="C I C1H C3V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C1V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C3V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C1V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C3V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="V">2V</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C1V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C2V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C1V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="H">6H</td>
+					<td class="C I C6H"></td>
+					<td class="C I C6H C2V"></td>
+					<td class="C I C6H"></td>
+					<td class="C I C6H"></td>
+					<td class="C I C6H"></td>
+					<td></td>
+					<td></td>
+					<td class="C I C1V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C2V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C1V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C2V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="CN">#</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="V">5V</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="V">4V</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C2V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C1V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C5V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C4V"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C2V"></td>
+					<td></td>
+					<td class="H">5H</td>
+					<td class="C I C5H"></td>
+					<td class="C I C5H"></td>
+					<td class="C I C5H"></td>
+					<td class="C I C5H C1V"></td>
+					<td class="C I C5H"></td>
+					<td class="C I C5H"></td>
+					<td class="C I C5H"></td>
+					<td class="C I C5H"></td>
+					<td class="C I C5H"></td>
+					<td></td>
+					<td></td>
+					<td class="C I C5V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C4V"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C2V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="CN">#</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C5V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C4V"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C2V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C1V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C5V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C4V"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="CN">#</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C1V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C5V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C4V"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C2V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C1V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C5V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="CN">#</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C2V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C1V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C5V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C4V"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C2V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="CN">#</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C5V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C4V"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C2V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C1V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="CN">#</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C4V"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="H">4H</td>
+					<td class="C I C4H"></td>
+					<td class="C I C4H"></td>
+					<td class="C I C4H"></td>
+					<td class="C I C4H"></td>
+					<td class="C I C4H"></td>
+					<td class="C I C4H"></td>
+					<td class="C I C4H C2V"></td>
+					<td class="C I C4H"></td>
+					<td class="C I C4H"></td>
+					<td class="C I C4H"></td>
+					<td class="C I C4H"></td>
+					<td class="C I C4H"></td>
+					<td class="C I C4H C1V"></td>
+					<td class="CN">#</td>
+					<td class="C I C4H"></td>
+					<td class="C I C4H"></td>
+					<td class="C I C4H"></td>
+					<td class="C I C4H"></td>
+					<td class="C I C4H"></td>
+					<td class="C I C4H"></td>
+					<td class="C I C4H C5V"></td>
+					<td class="C I C4H"></td>
+					<td class="C I C4H"></td>
+					<td class="C I C4H"></td>
+					<td class="C I C4H"></td>
+					<td class="C I C4H"></td>
+					<td class="C I C4H C4V"></td>
+					<td class="C I C4H"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C2V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C1V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C5V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C4V"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C2V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C1V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C5V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="CN">#</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C5V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C1V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C5V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="H">3H</td>
+					<td class="C I C3H"></td>
+					<td class="C I C3H"></td>
+					<td class="C I C3H C1V"></td>
+					<td class="C I C3H"></td>
+					<td class="C I C3H"></td>
+					<td class="C I C3H"></td>
+					<td class="C I C3H"></td>
+					<td class="C I C3H"></td>
+					<td></td>
+					<td></td>
+					<td class="C I C5V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C1V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C1V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C1V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="C I C1V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="H">2H</td>
+					<td class="C I C2H"></td>
+					<td class="C I C2H"></td>
+					<td class="C I C2H"></td>
+					<td class="C I C2H"></td>
+					<td class="C I C2H"></td>
+					<td class="C I C2H"></td>
+					<td class="C I C2H"></td>
+					<td class="C I C2H"></td>
+					<td class="C I C2H"></td>
+					<td class="C I C2H"></td>
+					<td class="C I C2H"></td>
+					<td class="C I C2H"></td>
+					<td class="C I C2H C1V"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+		<div class="timer">
+			<strong class="counter"> <span>Tiempo Restante:</span><strong id="timer">00:00</strong> </strong>
+			<a class="btn">INICIAR</a>
+			<a class="btn checkWord">COMPROBAR</a>
+			<hr>
+			<h2>Test crucigrama</h2>
+			<h3>HORIZONTALES</h3>
+			<p>
+				<b>1H.</b><span class="mark" data-mark="C1H">_______________(DESARROLLO)</span>
+			</p>
+			<p>
+				<b>2H.</b><span class="mark" data-mark="C2H">_______________(FUNDAMENTALES)</span>
+			</p>
+			<p>
+				<b>3H.</b><span class="mark" data-mark="C3H">_______________(IGUALDAD)</span>
+			</p>
+			<p>
+				<b>4H.</b><span class="mark" data-mark="C4H">_______________(TRASCENDENCIA CONSTITUCIONAL)</span>
+			</p>
+			<p>
+				<b>5H.</b><span class="mark" data-mark="C5H">_______________(VIOLENCIA)</span>
+			</p>
+			<p>
+				<b>6H.</b><span class="mark" data-mark="C6H">_______________(CEDAW)</span>
+			</p>
+			<hr>
+			<h3>VERTICALES</h3>
+			<p>
+				<b>1V.</b><span class="mark" data-mark="C1V">_______________(DERECHOALVOTOPARAMUJERES)</span>
+			</p>
+			<p>
+				<b>2V.</b><span class="mark" data-mark="C2V">_______________(DERECHOSHUMANOS)</span>
+			</p>
+			<p>
+				<b>3V.</b><span class="mark" data-mark="C3V">_______________(ONU)</span>
+			</p>
+			<p>
+				<b>4V.</b><span class="mark" data-mark="C4V">_______________(MUJERRURAL)</span>
+			</p>
+			<p>
+				<b>5V.</b><span class="mark" data-mark="C5V">_______________(FLORENCETHOMAS)</span>
+			</p>
+			<br>
+			<h3>Resultados:</h3>
+			<p>
+				Tipo: <span class="type"></span>
+				Puntos: <span class="points">0</span>
+				Palabras: <span class="words">0</span>
+			</p>
+			<p>
+				<small>Jonathan Montoya - montoyajonathans@gmail.com</small>
+			</p>
+		</div>
+	</body>
+</html>
